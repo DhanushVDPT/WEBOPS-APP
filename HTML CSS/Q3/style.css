@@ -1,0 +1,37 @@
+*{
+    margin: 0; /*removing the margin to make the bar cover from end to end*/
+}
+#bar{
+    background-color: #ffff00; /*bar's background color*/
+    position: sticky;
+    top: 0; /*so now when page is scrolled, as the bar reaches top 0, it will stick*/
+}
+#bar a{
+    text-decoration: none; /*removing the underline which comes for links*/
+    display: inline-block; /*links are inline, converting to inline-block to get a bar of links*/
+    /*styling the text*/
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* giving same color to visited and unvisited links so that bar looks uniform always */
+a:link, a:visited {
+    color: blue;
+}
+a:hover, a:active {
+    color: red;
+}
+/*styling rest of the text in the page*/
+body{
+    font-family: 'Bona Nova', serif;
+    background-color: #c3423f;
+    color: #ede7e3;
+    line-height: 1.5em;
+}
+#text {
+    margin: 10px;
+}
+h1, h2{
+    color: white;
+    line-height: 2em;
+}

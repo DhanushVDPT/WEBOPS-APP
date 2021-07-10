@@ -1,0 +1,46 @@
+.container{
+    height: 300px;
+    width: 100%;
+}
+
+.timerDisplay{
+    width: 100%;
+    font-size: 72px;
+    font-family: 'Encode Sans SC', sans-serif;
+    margin: 0 auto;
+}
+/* styling the buttons */
+#startTimer, #resetTimer, #stopTimer{
+    font-size: 30px;
+    padding: 10px 20px;
+    margin: 10px 15px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+}
+#startTimer{
+    background-color: #1982c4;
+}
+#stopTimer{
+    background-color: #F34213;
+}
+#resetTimer{
+    background-color: #3626A7;
+}
+/* darker background when hovered for each button */
+#startTimer:hover{
+    background-color: #136090;
+}
+#stopTimer:hover{
+    background-color: #D5370B;
+}
+#resetTimer:hover{
+    background-color: #251A74;
+}
+/*reducing shadow and moving the button down to give a clicked feel*/
+#startTimer:active, #stopTimer:active, #resetTimer:active {
+    box-shadow: 0 5px #666; /*shadow is reduced*/
+    transform: translateY(4px); /*button moves down*/
+}

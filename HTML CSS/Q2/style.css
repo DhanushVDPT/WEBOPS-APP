@@ -1,0 +1,20 @@
+div{
+    overflow-x: auto; /*when screen space isn't sufficient, scrolling will be allowed*/
+}
+th, td{
+    padding: 10px; /*verical alignment*/
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+tr {
+    transition: all 1s; /*1sec for mouse over and out*/
+}
+/*using nth selector to select even number rows to put stripes with background color*/
+tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+/*make background color dark when mouse hovers over a row*/
+tr:hover{
+    background-color: #548687;
+}

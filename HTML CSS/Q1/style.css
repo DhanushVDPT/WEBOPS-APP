@@ -1,0 +1,20 @@
+.box{
+    width: 35%;
+    margin: 10%;
+    text-align: center; /*horizontal alignment*/
+    padding: 70px 0px; /*vertical alignment*/
+}
+#box1{
+    background-color: rgba(0, 0, 250, 1); /*background color with full opacity*/
+    opacity: 0.5; /*opacity for whole box*/
+}
+#box2{
+    background-color: rgba(0, 0, 250, 0.5); /*background color with 0.5 opacity*/
+}
+/*For smaller displays if margin is removed they stack on each other*/
+@media screen and (max-width: 480px) {
+    .box{
+        margin: 0;
+        width: 100%;
+    }
+}
